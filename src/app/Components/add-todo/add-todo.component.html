@@ -1,0 +1,23 @@
+<div class="mt-3 shadow">
+
+    <form (submit)="onSubmit()" class="shadow p-2">
+        <div class="mb-3">
+            <label for="todo-elem" class="form-label text-success"><b>Your Todo :</b></label>
+            <input type="text" class="form-control" id="todo-elem" [(ngModel)]="todoelem" name="todo-elem"
+                placeholder="Enter Your Todos..." required="true">
+
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label text-success"><b>Description :</b></label>
+            <textarea type="text" class="form-control" id="description" name="description" [(ngModel)]="description"
+                placeholder="Enter Some Description..." rows="5"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-success">Add Todo</button>
+    </form>
+    <!-- <button class="btn btn-success" routerLink="/routes" routerLinkActive="active">Router</button> -->
+</div>
